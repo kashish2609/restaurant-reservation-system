@@ -140,6 +140,8 @@
 import React, { createContext, useState, useEffect, useContext } from 'react';
 import { ToastContainer, toast } from 'react-toastify';
 
+const BACKEND_URL = import.meta.env.VITE_BACKEND_URL;
+
 // Create the context
 const DishesContext = createContext(null);
 
@@ -159,7 +161,7 @@ const ContextProvider = (props) => {
     useEffect(() => {
         const fetchProducts = async () => {
             try {
-                const res = await fetch('http://localhost:4000/allproducts');
+                const res = await fetch(`${BACKEND_URL}/allproducts`);
                 const data = await res.json();
                 setAll_Product(data);
             } catch (error) {
@@ -170,7 +172,7 @@ const ContextProvider = (props) => {
         const fetchCart = async () => {
             if (localStorage.getItem('auth-token')) {
                 try {
-                    const res = await fetch('http://localhost:4000/getcart', {
+                    const res = await fetch(`${BACKEND_URL}/getcart`, {
                         method: 'POST',
                         headers: {
                             Accept: 'application/form-data',
@@ -197,7 +199,7 @@ const ContextProvider = (props) => {
             newCartItems[itemId] = (newCartItems[itemId] || 0) + 1;
 
             if (localStorage.getItem('auth-token')) {
-                fetch('http://localhost:4000/addtocart', {
+                fetch(`${BACKEND_URL}/addtocart`, {
                     method: 'POST',
                     headers: {
                         Accept: 'application/form-data',
@@ -230,7 +232,7 @@ const ContextProvider = (props) => {
                 newCartItems[itemId] -= 1;
 
                 if (localStorage.getItem('auth-token')) {
-                    fetch('http://localhost:4000/removefromcart', {
+                    fetch(`${BACKEND_URL}/removefromcart`, {
                         method: 'POST',
                         headers: {
                             Accept: 'application/form-data',

@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import './CSS/ListReservation.css';
+
+const BACKEND_URL = import.meta.env.VITE_BACKEND_URL;
 import cross_icon from '../../public/cross_icon.png';
 // const currentDate = new Date();
 // const today = currentDate.toISOString().split('T')[0];
@@ -11,7 +13,7 @@ const ListReservation = () => {
   const [allproducts, setAllProducts] = useState([]);
 
   const fetchInfo = async () => {
-    await fetch('http://localhost:4000/allreservation')
+    await fetch(`${BACKEND_URL}/allreservation`)
       .then((res) => res.json())
       .then((data) => {
         data=data.filter(d=>d.email==localStorage.getItem('email'));
@@ -25,7 +27,7 @@ const ListReservation = () => {
   }, []);
 
   const remove_product = async (id) => {
-    await fetch('http://localhost:4000/removereservation', {
+    await fetch(`${BACKEND_URL}/removereservation`, {
       method: 'POST',
       headers: {
         Accept: 'application/json',

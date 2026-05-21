@@ -1,6 +1,8 @@
 import React from "react";
 import { HiOutlineArrowNarrowRight } from "react-icons/hi";
 import axios from "axios";
+
+const BACKEND_URL = import.meta.env.VITE_BACKEND_URL;
 import { useState } from "react";
 import toast from "react-hot-toast";
 import { useNavigate } from "react-router-dom";
@@ -21,7 +23,7 @@ const Reservation = () => {
     toast.error("Please Loged in first..!");
    }else{
     const { data } = await axios.post(
-      "http://localhost:4000/api/v1/reservation/send",
+      `${BACKEND_URL}/api/v1/reservation/send`,
       { firstName, lastName, email, phone, date, time },
       {
         headers: {
