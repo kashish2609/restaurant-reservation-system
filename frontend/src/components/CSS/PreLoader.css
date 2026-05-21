@@ -1,0 +1,40 @@
+/* CSS/PreLoader.css */
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-15px);
+  }
+}
+
+@keyframes gradientMove {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.preloader-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: linear-gradient(-45deg, #ff9a9e, #fad0c4, #fbc2eb, #a6c1ee);
+  background-size: 400% 400%;
+  animation: gradientMove 10s ease infinite;
+  z-index: 9999;
+}
+
+.preloader-logo {
+  width: 120px;
+  height: 120px;
+  animation: bounce 1s infinite;
+  filter: drop-shadow(0 4px 10px rgba(0, 0, 0, 0.2));
+}

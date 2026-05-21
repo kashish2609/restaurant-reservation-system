@@ -1,0 +1,438 @@
+/* .back-to-home {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    background-color: #ffffff;
+    padding: 10px 14px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    color: #000;
+    font-weight: 600;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    text-decoration: none;
+    z-index: 999;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .back-to-home:hover {
+    background-color: #f0f0f0;
+    transform: translateY(-2px);
+  }
+   */
+
+   /* General styles */
+/*
+   
+body {
+    font-family: 'Oswald', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fefefe;
+    color: #333;
+  }
+  
+  .main-menu {
+    background-color: #fff;
+    transition: background-color 0.3s ease;
+    color: #333;
+  }
+  
+  .main-menu.dark {
+    background-color: #1f1f1f;
+    color: #f0f0f0;
+  }
+  
+  .menu {
+    padding: 40px 20px;
+  }
+  
+  .heading {
+    text-align: center;
+    font-size: 36px;
+    font-weight: 600;
+    margin-bottom: 30px;
+  }
+  
+  /* Search and filter bar */
+  /*
+  .search_and_filter {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .search_and_filter input,
+  .search_and_filter select {
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    outline: none;
+    transition: border 0.3s ease;
+  }
+  
+  .search_and_filter input:focus,
+  .search_and_filter select:focus {
+    border-color: #555;
+  }
+  
+  /* Dishes container */
+  /*
+  .dishes_container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 20px;
+    padding: 20px 0;
+  }
+  
+  /* Dish card */
+  /*
+  .card {
+    background-color: #fff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.1);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+    animation: fadeInUp 0.5s ease forwards;
+    opacity: 0;
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  }
+  
+  .card img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+  }
+  
+  .card h2 {
+    text-align: center;
+    font-size: 18px;
+    margin: 10px 0;
+  }
+  
+  .card button {
+    margin: 0 auto 10px auto;
+    display: block;
+    background-color: #ff6347;
+    color: white;
+    padding: 6px 12px;
+    border: none;
+    border-radius: 6px;
+    font-weight: 500;
+    cursor: default;
+  }
+  
+  /* Veg/Non-Veg dot and name */
+  /*
+  .card > div:first-of-type {
+    padding: 10px;
+  }
+  
+  .card div div {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    justify-content: center;
+    margin-top: 6px;
+  }
+  
+  .card div div > div:first-child {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+  }
+  
+  /* Animation keyframes */
+  /*
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Fixed Back to Home button */
+  /*
+  .back-to-home {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    background-color: #ffffff;
+    padding: 10px 14px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    color: #000;
+    font-weight: 600;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    text-decoration: none;
+    z-index: 999;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .back-to-home:hover {
+    background-color: #f0f0f0;
+    transform: translateY(-2px);
+  }
+  
+  /* Theme toggle button */
+  /*
+  .theme-toggle {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background: #ff6347;
+    color: white;
+    border: none;
+    padding: 10px 14px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    z-index: 999;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .theme-toggle:hover {
+    background-color: #ff4d2e;
+    transform: translateY(-2px);
+  }
+  
+  /* Responsive adjustments */
+  /*
+  @media screen and (max-width: 600px) {
+    .heading {
+      font-size: 28px;
+    }
+  
+    .search_and_filter {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .dishes_container {
+      grid-template-columns: 1fr;
+    }
+  
+    .back-to-home {
+      top: auto;
+      bottom: 20px;
+      left: 20px;
+    }
+  }
+  */
+  /* General styles */
+body {
+    font-family: 'Oswald', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fefefe;
+    color: #333;
+  }
+  
+  .main-menu {
+    background-color: #fff;
+    transition: background-color 0.3s ease;
+    color: #333;
+  }
+  
+  .main-menu.dark {
+    background-color: #1f1f1f;
+    color: #f0f0f0;
+  }
+  
+  .menu {
+    padding: 40px 20px;
+  }
+  
+  .heading {
+    text-align: center;
+    font-size: 36px;
+    font-weight: 600;
+    margin-bottom: 30px;
+  }
+  
+  /* Search and filter bar */
+  .search_and_filter {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .search_and_filter input,
+  .search_and_filter select {
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    outline: none;
+    transition: border 0.3s ease;
+  }
+  
+  .search_and_filter input:focus,
+  .search_and_filter select:focus {
+    border-color: #555;
+  }
+  
+  /* Dishes container */
+  .dishes_container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 20px;
+    padding: 20px 0;
+  }
+  
+  /* Dish card */
+  .card {
+    background-color: #fff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.1);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+    animation: fadeInUp 0.5s ease forwards;
+    opacity: 0;
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  }
+  
+  .card img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+  }
+  
+  .card h2 {
+    text-align: center;
+    font-size: 18px;
+    margin: 10px 0;
+  }
+  
+  .card button {
+    margin: 0 auto 10px auto;
+    display: block;
+    background-color: #ff6347;
+    color: white;
+    padding: 6px 12px;
+    border: none;
+    border-radius: 6px;
+    font-weight: 500;
+    cursor: default;
+  }
+  
+  /* Veg/Non-Veg dot and name */
+  .card > div:first-of-type {
+    padding: 10px;
+  }
+  
+  .card div div {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    justify-content: center;
+    margin-top: 6px;
+  }
+  
+  .card div div > div:first-child {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+  }
+  
+  /* Animation keyframes */
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Fixed Back to Home button */
+  .back-to-home {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    padding: 6px 12px;
+    font-size: 14px;
+    font-weight: 500;
+    color: #333;
+    text-decoration: none;
+    border: 1px solid #333;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    z-index: 999;
+    transition: transform 0.3s ease;
+  }
+  
+  .back-to-home:hover {
+    background-color: #f0f0f0;
+    transform: translateY(-2px);
+  }
+  
+  .back-to-home svg {
+    font-size: 18px;
+  }
+  
+  /* Theme toggle button */
+  .theme-toggle {
+    position: fixed;
+    top: 20px;
+    right: 120px;
+    background: #ff6347;
+    color: white;
+    border: none;
+    padding: 10px 14px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    z-index: 999;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .theme-toggle:hover {
+    background-color: #ff4d2e;
+    transform: translateY(-2px);
+  }
+  
+  /* Responsive adjustments */
+  @media screen and (max-width: 600px) {
+    .heading {
+      font-size: 28px;
+    }
+  
+    .search_and_filter {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .dishes_container {
+      grid-template-columns: 1fr;
+    }
+  
+    .back-to-home {
+      top: auto;
+      bottom: 20px;
+      left: 20px;
+    }
+  }
+  
