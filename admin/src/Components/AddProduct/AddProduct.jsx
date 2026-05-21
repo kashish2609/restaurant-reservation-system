@@ -3,7 +3,7 @@ import './AddProduct.css'
 import upload_area from '../../assets/upload_area.svg'
 import toast from "react-hot-toast";
 
-const BACKEND_URL = import.meta.env.VITE_BACKEND_URL;
+const BACKEND_URL = import.meta.env.VITE_BACKEND_URL || "http://localhost:4000";
 
 const AddProduct = () => {
   const [image,setImage]=useState(false);

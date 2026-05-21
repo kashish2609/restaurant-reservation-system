@@ -1,6 +1,6 @@
 import React,{useEffect,useState} from 'react'
 
-const BACKEND_URL = import.meta.env.VITE_BACKEND_URL;
+const BACKEND_URL = import.meta.env.VITE_BACKEND_URL || "http://localhost:4000";
 
 const Fav = () => {
   const [allproducts, setAllProducts] = useState([]);

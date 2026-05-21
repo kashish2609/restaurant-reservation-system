@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import './CSS/ListReservation.css';
 
-const BACKEND_URL = import.meta.env.VITE_BACKEND_URL;
+const BACKEND_URL = import.meta.env.VITE_BACKEND_URL || "http://localhost:4000";
 import cross_icon from '../../public/cross_icon.png';
 // const currentDate = new Date();
 // const today = currentDate.toISOString().split('T')[0];

@@ -140,7 +140,7 @@
 import React, { createContext, useState, useEffect, useContext } from 'react';
 import { ToastContainer, toast } from 'react-toastify';
 
-const BACKEND_URL = import.meta.env.VITE_BACKEND_URL;
+const BACKEND_URL = import.meta.env.VITE_BACKEND_URL || "http://localhost:4000";
 
 // Create the context
 const DishesContext = createContext(null);
