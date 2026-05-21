@@ -1,10 +1,12 @@
 import React,{useEffect,useState} from 'react'
 
+const BACKEND_URL = import.meta.env.VITE_BACKEND_URL;
+
 const Fav = () => {
   const [allproducts, setAllProducts] = useState([]);
 
   const fetchInfo = async () => {
-    await fetch('http://localhost:4000/allproducts')
+    await fetch(`${BACKEND_URL}/allproducts`)
       .then((res) => res.json())
       .then((data) => {
         setAllProducts(data);
