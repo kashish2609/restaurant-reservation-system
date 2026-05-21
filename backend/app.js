@@ -15,7 +15,7 @@ import { Reservation } from "./models/reservation.js";
 
 const app = express();
 dotenv.config({ path: "./config.env" }); 
-const allowedOrigins = ['http://localhost:5173', 'http://localhost:5174'];
+const allowedOrigins = ['http://localhost:5173', 'http://localhost:5174','https://restaurant-reservation-system-kdq8.vercel.app'];
 
 const corsOptions = {
   origin: function (origin, callback) {
